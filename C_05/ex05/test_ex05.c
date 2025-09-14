@@ -6,13 +6,14 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 12:03:51 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/09 19:53:05 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/14 17:00:09 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include <unistd.h>
 
-int ft_is_prime(int nb);
+int	ft_sqrt(int nb);
 
 void ft_putchar(char c)
 {
@@ -45,15 +46,15 @@ void ft_putstr(char *str)
 
 int main(void)
 {
-	int tests[] = {0, 1, 2, 3, 4, 5, 16, 17, 19, 20, 23, 24};
+	int tests[] = {-4, 0, 1, 2, 4, 8, 9, 16, 20, 25, 26};
 	int num_tests = sizeof(tests) / sizeof(tests[0]);
 
 	for (int i = 0; i < num_tests; i++)
 	{
-		ft_putstr("Is ");
+		ft_putstr("sqrt(");
 		ft_putnbr(tests[i]);
-		ft_putstr(" prime? ");
-		ft_putnbr(ft_is_prime(tests[i]));
+		ft_putstr(") = ");
+		ft_putnbr(ft_sqrt(tests[i]));
 		ft_putchar('\n');
 	}
 

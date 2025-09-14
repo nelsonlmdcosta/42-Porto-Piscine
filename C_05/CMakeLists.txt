@@ -33,7 +33,7 @@ foreach(dir ${EXERCISE_DIRS})
             if(FT_FILES)
                 # Add Norminette as a pre-build step (runs before compilation)
                 add_custom_command(TARGET ${dir} PRE_BUILD
-                        COMMAND ${NORMINETTE_EXECUTABLE} -R CheckForbiddenSourceHeader ${FT_FILES}
+                        COMMAND ${NORMINETTE_EXECUTABLE} -R CheckForbiddenSourceHeader -R CheckDefine ${FT_FILES}
                         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
                         COMMENT "Running Norminette on ${dir}..."
                 )
