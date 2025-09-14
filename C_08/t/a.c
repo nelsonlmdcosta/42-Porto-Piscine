@@ -1,26 +1,12 @@
-/* ************************************************************************** */
+﻿/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   a.c                                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/13 12:25:31 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/13 12:26:44 by nluis-mo         ###   ########.fr       */
+/*   Created: 2025/09/14 22:50:52 by nluis-mo          #+#    #+#             */
+/*   Updated: 2025/09/14 22:50:56 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
-
-/*
- * 	Definition of a point, very common in games and visual applications
- * 		Again nothing too special here
- */
-typedef struct s_point
-{
-	int	x;
-	int	y;
-}	t_point;
-
-#endif

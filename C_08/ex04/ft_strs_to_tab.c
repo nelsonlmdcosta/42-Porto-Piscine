@@ -6,14 +6,17 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/13 12:27:52 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/13 12:31:47 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/14 22:55:20 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "ft_stocks_str.h"
 
-static int	ft_strlen(char *str)
+/*
+ * Classic Strlen!
+ */
+int	ft_strlen(char *str)
 {
 	int	len;
 
@@ -23,7 +26,11 @@ static int	ft_strlen(char *str)
 	return (len);
 }
 
-static char	*ft_strdup(char *src)
+/*
+ * Str Duplicator, we've seen these before int he previous excercises
+ * 		Just duplicates a string into a new bit of memory
+ */
+char	*ft_strdup(char *src)
 {
 	int		len;
 	char	*dup;
@@ -43,6 +50,10 @@ static char	*ft_strdup(char *src)
 	return (dup);
 }
 
+/*
+ *	Converts the Array of strings into a t_stock_str structure
+ *
+ */
 t_stock_str	*ft_strs_to_tab(int ac, char **av)
 {
 	t_stock_str	*array;
