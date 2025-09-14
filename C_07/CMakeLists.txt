@@ -20,11 +20,7 @@ foreach(dir ${EXERCISE_DIRS})
 
     if(SRC_FILES)
         # Add the executable
-        add_executable(${dir} ${SRC_FILES}
-                ex01/ft_range.c
-                ex02/ft_ultimate_range.c
-                ex03/ft_strjoin.c
-                ex05/ft_split.c)
+        add_executable(${dir} ${SRC_FILES})
 
         # Only run Norminette if executable is built and norminette exists
         if(NORMINETTE_EXECUTABLE)
@@ -37,7 +33,7 @@ foreach(dir ${EXERCISE_DIRS})
             if(FT_FILES)
                 # Add Norminette as a pre-build step (runs before compilation)
                 add_custom_command(TARGET ${dir} PRE_BUILD
-                        COMMAND ${NORMINETTE_EXECUTABLE} -R CheckForbiddenSourceHeader ${FT_FILES}
+                        COMMAND ${NORMINETTE_EXECUTABLE} -R CheckForbiddenSourceHeader -R CheckDefine ${FT_FILES}
                         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
                         COMMENT "Running Norminette on ${dir}..."
                 )

@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 10:50:05 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/12 11:11:26 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/14 17:27:37 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,14 @@ int main(void)
     counter = 0;
     while(counter < range2len)
     {
-        printf("Array1[%d] - %d\n", counter, *(range2 + counter));
+        printf("Array2[%d] - %d\n", counter, *(range2 + counter));
         ++counter;
     }
 
     counter = 0;
     while(counter < range3len)
     {
-        printf("Array1[%d] - %d\n", counter, *(range3 + counter));
+        printf("Array3[%d] - %d\n", counter, *(range3 + counter));
         ++counter;
     }
     return 0;

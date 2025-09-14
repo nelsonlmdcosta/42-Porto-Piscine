@@ -6,98 +6,93 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 11:24:00 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/12 12:26:09 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/14 18:21:56 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int ft_strlen(const char *string)
+int	ft_strlen(const char *str)
 {
-	int counter;
+	int	length;
 
-	counter = 0;
-	while(*(string + counter) != '\0')
-		counter++;
-	return counter;
+	length = 0;
+	while (str[length])
+		length++;
+	return (length);
 }
 
-int getlengthinarrayofstringsincludingseperator(char **strs, int arraylen, int seperatorsize )
+/*
+ * 	Total Length Is The Size Of Each String + Size Of Seperators + \0
+ */
+int	get_total_length(char **strs, int size, char *sep)
 {
-	int counter;
-	int buffersize;
+	int	word_index;
+	int	total;
 
-	counter = 0;
-	buffersize = 0;
-	while(counter < arraylen)
+	total = 0;
+	word_index = 0;
+	while (word_index < size)
 	{
-		buffersize += ft_strlen(*(strs + counter));
-		if(counter < arraylen-1)
-		{
-			buffersize += seperatorsize;
-		}
-		++counter;
+		total += ft_strlen(strs[word_index]);
+		if (word_index < size - 1)
+			total += ft_strlen(sep);
+		word_index++;
 	}
-	return buffersize;
+	return (total+1);
 }
 
-int allocateandcopystrsintobuffer(char **strs, int arraylen, char* buffer, char* seperator, int seperatorsize)
+/*
+ * 	Copies Current Word, Then Copies The Seperator As Long As It's Not The Last
+ * 		one then null terminates it.
+ */
+void	copy_to_buffer(char **strs, int size, char *sep, char *buffer)
 {
-	int counter = 0;
-	int buffercounter = 0;
-	int sourcecounter = 0;
-	int separatorcounter = 0;
-	while(counter < arraylen)
+	int	word_index;
+	int	char_index;
+	int	buffer_index;
+
+	buffer_index = 0;
+	word_index = 0;
+	while (word_index < size)
 	{
-		char* currentsource = *(strs + counter);
-		int sourcesize = ft_strlen(currentsource);
-
-		sourcecounter = 0;
-		while(sourcecounter < sourcesize)
+		char_index = 0;
+		while (strs[word_index][char_index])
+			buffer[buffer_index++] = strs[word_index][char_index++];
+		if (word_index < size - 1)
 		{
-			*(buffer + buffercounter) = *(currentsource + sourcecounter);
-			++buffercounter;
-			++sourcecounter;
+			char_index = 0;
+			while (sep[char_index])
+				buffer[buffer_index++] = sep[char_index++];
 		}
-		++counter;
-
-		if(counter < arraylen)
-		{
-			separatorcounter = 0;
-			while(separatorcounter < seperatorsize)
-			{
-				*(buffer + buffercounter) = *(seperator + separatorcounter);
-				++buffercounter;
-				++separatorcounter;
-			}
-		}
+		word_index++;
 	}
-	*(buffer + buffercounter) = '\0';
-
-	return 1;
+	buffer[buffer_index] = '\0';
 }
 
-char *ft_strjoin(int size, char **strs, char *sep)
+/*
+ * 	If size is 0 returns a 1 character string back to free whenever
+ *
+ *	Otherwise will figure out the full size, allocate the buffer then
+ *		copy the strings into said buffer.
+ */
+char	*ft_strjoin(int size, char **strs, char *sep)
 {
-	int seperatorsize;
-	int buffersize;
-	char* buffer;
+	int		total_len;
+	char	*buffer;
 
-	if(size == 0)
+	if (size == 0)
 	{
-		buffer = malloc(sizeof(char) * 1);
+		buffer = malloc(1);
+		if (!buffer)
+			return (NULL);
 		buffer[0] = '\0';
-		return buffer;
+		return (buffer);
 	}
-
-	seperatorsize = ft_strlen(sep);
-	buffersize = getlengthinarrayofstringsincludingseperator(strs, size, seperatorsize);
-	buffer = malloc(sizeof(char) * buffersize);
-
-	if(!allocateandcopystrsintobuffer(strs, size, buffer, sep, seperatorsize))
-	{
-		buffer[0] = '\0';
-		return buffer;
-	}
-	return buffer;
+	total_len = get_total_length(strs, size, sep);
+	buffer = malloc(total_len + 1);
+	if (!buffer)
+		return (NULL);
+	copy_to_buffer(strs, size, sep, buffer);
+	return (buffer);
 }

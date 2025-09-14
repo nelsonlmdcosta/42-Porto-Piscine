@@ -1,4 +1,4 @@
-﻿/* ************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_convert_base.c                                  :+:      :+:    :+:   */
@@ -6,128 +6,103 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/13 13:30:43 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/13 13:30:46 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/14 19:24:09 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-static int	ft_strlen(char *str)
-{
-	int i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
+int		ft_strlen(char *str);
+int		check_base(char *base);
+int		get_number_length_base(long number, int base_length);
+void	fill_number_base(char *result, long number, char *base, int length);
 
-static int	is_space(char c)
+/*
+ * 	Same as the other excercises base is the dicitonary, we try to
+ * 	find the character in the base to return its index back.
+ */
+int	get_base_index(char character, char *base)
 {
-	return (c == ' ' || (c >= 9 && c <= 13));
-}
+	int	base_index;
 
-static int	check_base(char *base)
-{
-	int i, j;
-
-	if (ft_strlen(base) < 2)
-		return (0);
-	i = 0;
-	while (base[i])
+	base_index = 0;
+	while (base[base_index])
 	{
-		if (base[i] == '+' || base[i] == '-' || is_space(base[i]))
-			return (0);
-		j = i + 1;
-		while (base[j])
-		{
-			if (base[i] == base[j])
-				return (0);
-			j++;
-		}
-		i++;
-	}
-	return (1);
-}
-
-static int	base_index(char c, char *base)
-{
-	int i = 0;
-
-	while (base[i])
-	{
-		if (base[i] == c)
-			return (i);
-		i++;
+		if (base[base_index] == character)
+			return (base_index);
+		base_index++;
 	}
 	return (-1);
 }
 
-static int	ft_atoi_base(char *str, char *base)
+/*
+ * Classic atoi, skips spaces and isspace characters, then ensures the sign
+ * 		finally conversts the from the base to the number and retusn teh
+ * 		converted number as an integer
+ */
+int	ft_atoi_base(char *str, char *base)
 {
-	int i = 0, sign = 1, nb = 0, idx, blen = ft_strlen(base);
+	int	position;
+	int	sign;
+	int	result;
+	int	base_value;
+	int	base_length;
 
-	while (is_space(str[i]))
-		i++;
-	while (str[i] == '+' || str[i] == '-')
+	position = 0;
+	sign = 1;
+	result = 0;
+	base_length = ft_strlen(base);
+	while (str[position] == ' ' || (str[position] >= 9 && str[position] <= 13))
+		position++;
+	while (str[position] == '+' || str[position] == '-')
 	{
-		if (str[i] == '-')
+		if (str[position] == '-')
 			sign = -sign;
-		i++;
+		position++;
 	}
-	while ((idx = base_index(str[i], base)) != -1)
+	base_value = get_base_index(str[position], base);
+	while (base_value != -1)
 	{
-		nb = nb * blen + idx;
-		i++;
+		result = result * base_length + base_value;
+		base_value = get_base_index(str[++position], base);
 	}
-	return (nb * sign);
+	return (result * sign);
 }
 
-static int	ft_nbrlen_base(int nbr, char *base)
+/*
+ * Helper that does the opposite, it converts the integer into a
+ * 		base. Gets the base length, repeatedly divides it till we
+ * 		get the integer we want that way we can alocate the size of
+ * 		our number, then go ahead.
+ * 	We also need to handle the special 0 case, it'll be represented
+ * 		as the 0 index.
+ * 	Then just does the usual signage shenanigans, and places all the
+ * 		characters in their respective buffers
+ */
+char	*ft_itoa_base(int number, char *base)
 {
-	int blen = ft_strlen(base);
-	int len = (nbr <= 0);
+	int		length;
+	char	*result;
+	long	number_long;
 
-	while (nbr)
-	{
-		nbr /= blen;
-		len++;
-	}
-	return (len);
-}
-
-static char	*ft_itoa_base(int nbr, char *base)
-{
-	int		blen = ft_strlen(base);
-	int		len = ft_nbrlen_base(nbr, base);
-	char	*str;
-	long	n = nbr; // use long for -2147483648
-	int		i;
-
-	str = (char *)malloc((len + 1) * sizeof(char));
-	if (!str)
+	number_long = number;
+	length = get_number_length_base(number_long, ft_strlen(base));
+	result = (char *) malloc(length + 1);
+	if (!result)
 		return (NULL);
-	str[len] = '\0';
-	i = len - 1;
-	if (n == 0)
-		str[0] = base[0];
-	if (n < 0)
-	{
-		str[0] = '-';
-		n = -n;
-	}
-	while (n > 0)
-	{
-		str[i--] = base[n % blen];
-		n /= blen;
-	}
-	return (str);
+	fill_number_base(result, number_long, base, length);
+	return (result);
 }
 
+/*
+ *	Base function that's requested of us, if a base fails nothing else should
+ *		happen, otherwise we conver the base to an integer, then to the char
+ *		version for my sanity, im sure there must be a way to convert between
+ *		but I'm going to skip that
+ */
 char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 {
-	int value;
-
 	if (!check_base(base_from) || !check_base(base_to))
 		return (NULL);
-	value = ft_atoi_base(nbr, base_from);
-	return (ft_itoa_base(value, base_to));
+	return (ft_itoa_base(ft_atoi_base(nbr, base_from), base_to));
 }
