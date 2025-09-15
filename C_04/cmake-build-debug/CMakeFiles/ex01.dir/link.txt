@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/ex01.dir/ex01/ft_putstr.c.o CMakeFiles/ex01.dir/ex01/test_ex01.c.o -o ex01 

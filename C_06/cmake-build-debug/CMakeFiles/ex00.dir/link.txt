@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/ex00.dir/ex00/ft_print_program_name.c.o -o ex00 

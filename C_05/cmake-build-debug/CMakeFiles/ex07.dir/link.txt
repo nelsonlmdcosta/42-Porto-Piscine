@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/ex07.dir/ex07/ft_find_next_prime.c.o CMakeFiles/ex07.dir/ex07/test_ex07.c.o -o ex07 

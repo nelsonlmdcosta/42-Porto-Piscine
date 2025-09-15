@@ -1,6 +1,0 @@
-/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/CMakeFiles/ex00.dir
-/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/CMakeFiles/ex01.dir
-/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/CMakeFiles/ex02.dir
-/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/CMakeFiles/ex03.dir
-/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/CMakeFiles/rebuild_cache.dir
