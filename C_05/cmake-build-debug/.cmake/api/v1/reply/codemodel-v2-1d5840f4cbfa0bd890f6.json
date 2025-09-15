@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "C_05",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ex00::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex00-Debug-b1494557c8c6862edaca.json",
+					"name" : "ex00",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex01-Debug-ef3fa302a5a27e29e269.json",
+					"name" : "ex01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex02-Debug-67e6680c43ceeb1b2bf6.json",
+					"name" : "ex02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex03::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex03-Debug-d6b31d8cfb352a041546.json",
+					"name" : "ex03",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex04::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex04-Debug-8ad75ce768c2dff857ba.json",
+					"name" : "ex04",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex05::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex05-Debug-467c2f6dff86052c032d.json",
+					"name" : "ex05",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex06::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex06-Debug-a1a85924934754fe2a76.json",
+					"name" : "ex06",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex07::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex07-Debug-722fbcf768fa3b4b593c.json",
+					"name" : "ex07",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex08::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex08-Debug-b24949dcef4099b013f8.json",
+					"name" : "ex08",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nluis-mo/Repositories/GitCLionWorkspaces/C_05/cmake-build-debug",
+		"source" : "/home/nluis-mo/Repositories/GitCLionWorkspaces/C_05"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

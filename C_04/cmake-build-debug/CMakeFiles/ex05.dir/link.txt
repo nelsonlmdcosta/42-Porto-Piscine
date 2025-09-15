@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/ex05.dir/ex05/ft_atoi_base.c.o CMakeFiles/ex05.dir/ex05/test_ex05.c.o -o ex05 

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="C_06"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex00">
+				<Option output="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/ex00" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex00"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex00/fast">
+				<Option output="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/ex00" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex00/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex01">
+				<Option output="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/ex01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex01"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex01/fast">
+				<Option output="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/ex01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex01/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex02">
+				<Option output="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/ex02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex02"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex02/fast">
+				<Option output="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/ex02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex02/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex03">
+				<Option output="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/ex03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex03"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex03/fast">
+				<Option output="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/ex03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex03/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/ex00/ft_print_program_name.c">
+			<Option target="ex00"/>
+		</Unit>
+		<Unit filename="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/ex01/ft_print_params.c">
+			<Option target="ex01"/>
+		</Unit>
+		<Unit filename="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/ex02/ft_rev_params.c">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/ex03/ft_sort_params.c">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/home/nluis-mo/Repositories/GitCLionWorkspaces/C_06/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

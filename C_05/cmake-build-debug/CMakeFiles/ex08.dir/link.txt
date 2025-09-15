@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/ex08.dir/ex08/ft_ten_queens_puzzle.c.o CMakeFiles/ex08.dir/ex08/test_ex08.c.o -o ex08 

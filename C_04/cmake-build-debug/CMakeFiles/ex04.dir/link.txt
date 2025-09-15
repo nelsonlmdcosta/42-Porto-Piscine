@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/ex04.dir/ex04/ft_putnbr_base.c.o CMakeFiles/ex04.dir/ex04/test_ex04.c.o -o ex04 

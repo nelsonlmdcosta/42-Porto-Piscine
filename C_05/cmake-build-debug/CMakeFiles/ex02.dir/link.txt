@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/ex02.dir/ex02/ft_iterative_power.c.o CMakeFiles/ex02.dir/ex02/test_ex02.c.o -o ex02 
