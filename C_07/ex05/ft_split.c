@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 12:27:10 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/14 20:33:53 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/15 21:40:37 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,28 +51,25 @@ int	getnextindexatseparatorfrom(char *str, int startindex, char *charset)
  * Counts instances of words depending on how many seperators tehre are
  * 		Technically should
  */
-int	countinstancesofseperatedchars(char *str, char *charset)
+int	countinstancesofseperatedchars(const char *str, const char *charset)
 {
-	int	pointercounter;
-	int	seperatorcounter;
+	int	count;
+	int	in_word;
 
-	pointercounter = 0;
-	seperatorcounter = 1;
-	while (*(str + pointercounter) != '\0')
+	count = 0;
+	in_word = 0;
+	while (*str)
 	{
-		if (ischaracteraseperator(*(str + pointercounter), charset))
+		if (ischaracteraseperator(*str, (char *)charset))
+			in_word = 0;
+		else if (!in_word)
 		{
-			while (*(str + pointercounter) != '\0'
-				&& ischaracteraseperator(*(str + pointercounter), charset))
-			{
-				++pointercounter;
-			}
-			++seperatorcounter;
-			continue ;
+			in_word = 1;
+			count++;
 		}
-		++pointercounter;
+		str++;
 	}
-	return (seperatorcounter);
+	return (count);
 }
 
 /*
@@ -109,17 +106,20 @@ char	**ft_split(char *str, char *charset)
 
 	totalstrings = countinstancesofseperatedchars(str, charset);
 	stringholder = malloc(sizeof(char *) * (totalstrings + 1));
+	if (!stringholder)
+		return (NULL);
 	lastindex = 0;
 	stringcounter = 0;
 	while (stringcounter < totalstrings)
 	{
+		while (str[lastindex] != '\0'
+			&& ischaracteraseperator(str[lastindex], charset))
+			++lastindex;
 		chopto = getnextindexatseparatorfrom(str, lastindex, charset);
-		*(stringholder + stringcounter++) = chopstring(str, lastindex, chopto);
-		while (str[chopto] != '\0'
-			&& ischaracteraseperator(str[chopto], charset))
-			++chopto;
+		if (chopto > lastindex)
+			stringholder[stringcounter++] = chopstring(str, lastindex, chopto);
 		lastindex = chopto;
 	}
-	*(stringholder + stringcounter) = NULL;
+	stringholder[stringcounter] = NULL;
 	return (stringholder);
 }

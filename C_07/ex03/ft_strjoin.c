@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 11:24:00 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/14 18:21:56 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/15 21:17:18 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	get_total_length(char **strs, int size, char *sep)
 			total += ft_strlen(sep);
 		word_index++;
 	}
-	return (total+1);
+	return (total + 1);
 }
 
 /*
@@ -90,7 +90,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 		return (buffer);
 	}
 	total_len = get_total_length(strs, size, sep);
-	buffer = malloc(total_len + 1);
+	buffer = malloc(total_len);
 	if (!buffer)
 		return (NULL);
 	copy_to_buffer(strs, size, sep, buffer);

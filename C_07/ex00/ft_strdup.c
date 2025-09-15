@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 10:32:19 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/14 17:25:35 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/15 21:11:47 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strdup(char *src)
 	buffer = malloc(sizeof(char) * length);
 	if (!buffer)
 	{
-		return (0);
+		return (NULL);
 	}
 	while (counter < length)
 	{

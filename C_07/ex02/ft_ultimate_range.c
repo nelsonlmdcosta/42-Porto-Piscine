@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 11:12:47 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/14 17:39:22 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/15 21:43:42 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,15 @@ int	ft_ultimate_range(int **range, int min, int max)
 	int	length;
 	int	counter;
 
-	if (min > max)
+	if (min >= max)
+	{
+		*range = NULL;
 		return (0);
+	}
 	length = max - min;
 	*range = malloc(sizeof(int) * length);
+	if (!*range)
+		return (-1);
 	counter = 0;
 	while (counter < length)
 	{

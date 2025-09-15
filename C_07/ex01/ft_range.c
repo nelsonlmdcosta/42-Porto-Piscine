@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 10:56:21 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/14 17:30:04 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/15 21:44:01 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,19 @@ int	*ft_range(int min, int max)
 {
 	int	length;
 	int	*buffer;
+	int	i;
 
-	if (min > max)
+	if (min >= max)
 		return (0);
 	length = max - min;
 	buffer = malloc(sizeof(int) * length);
-	while (length >= 0)
+	if (!buffer)
+		return (NULL);
+	i = 0;
+	while (i < length)
 	{
-		*(buffer + length - 1) = (min + length - 1);
-		--length;
+		*(buffer + i) = (min + i);
+		++i;
 	}
 	return (buffer);
 }
