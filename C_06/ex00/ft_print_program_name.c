@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 12:03:21 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/15 14:47:29 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/15 15:46:57 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,6 @@ int	main(int argc, char *argv[])
 	programname = argv[0];
 	while (*programname != '\0')
 		write(1, programname++, 1);
+	write(1, "\n", 1);
 	return (0);
 }
