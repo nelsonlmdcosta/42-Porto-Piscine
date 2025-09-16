@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 11:24:00 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/15 21:17:18 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/16 10:25:45 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,3 +96,15 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	copy_to_buffer(strs, size, sep, buffer);
 	return (buffer);
 }
+
+/*
+#include <stdio.h>
+
+char *ft_strjoin(int size, char **strs, char *sep);
+
+int main(int argc, char** argv)
+{
+char* buffer = ft_strjoin(argc, argv, ", ");
+printf("Concatenated Input: %s\n", buffer);
+return 0;
+}*/
