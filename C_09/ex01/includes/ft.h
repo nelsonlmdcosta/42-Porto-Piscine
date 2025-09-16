@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex02.c                                        :+:      :+:    :+:   */
+/*   ft.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/15 08:02:50 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/15 22:17:31 by nluis-mo         ###   ########.fr       */
+/*   Created: 2025/09/15 22:13:27 by nluis-mo          #+#    #+#             */
+/*   Updated: 2025/09/15 22:13:48 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef FT_H
+# define FT_H
 
-char **ft_split(char *str, char *charset);
+void	ft_putchar(char c);
+void	ft_swap(int *a, int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
 
-int main(void)
-{
-	char** splitstrings = ft_split(",,hello,,world", ",");//"This-Is/A Test|Split|string", "-/|");
-
-	int splitstrcounter = 0;
-	while(*(splitstrings + splitstrcounter) != NULL)
-	{
-		char* stringtoprint = *(splitstrings + splitstrcounter);
-		printf("%s\n", stringtoprint);
-		++splitstrcounter;
-	}
-}
+#endif

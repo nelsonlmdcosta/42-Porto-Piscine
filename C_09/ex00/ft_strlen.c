@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex02.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/15 08:02:50 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/15 22:17:31 by nluis-mo         ###   ########.fr       */
+/*   Created: 2025/09/15 22:06:00 by nluis-mo          #+#    #+#             */
+/*   Updated: 2025/09/15 22:14:11 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char **ft_split(char *str, char *charset);
-
-int main(void)
+int	ft_strlen(char *str)
 {
-	char** splitstrings = ft_split(",,hello,,world", ",");//"This-Is/A Test|Split|string", "-/|");
+	int	len;
 
-	int splitstrcounter = 0;
-	while(*(splitstrings + splitstrcounter) != NULL)
-	{
-		char* stringtoprint = *(splitstrings + splitstrcounter);
-		printf("%s\n", stringtoprint);
-		++splitstrcounter;
-	}
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
 }

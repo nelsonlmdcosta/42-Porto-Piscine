@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex02.c                                        :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/15 08:02:50 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/15 22:17:31 by nluis-mo         ###   ########.fr       */
+/*   Created: 2025/09/15 22:05:27 by nluis-mo          #+#    #+#             */
+/*   Updated: 2025/09/15 22:14:15 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char **ft_split(char *str, char *charset);
-
-int main(void)
+void	ft_swap(int *a, int *b)
 {
-	char** splitstrings = ft_split(",,hello,,world", ",");//"This-Is/A Test|Split|string", "-/|");
+	int	temp;
 
-	int splitstrcounter = 0;
-	while(*(splitstrings + splitstrcounter) != NULL)
-	{
-		char* stringtoprint = *(splitstrings + splitstrcounter);
-		printf("%s\n", stringtoprint);
-		++splitstrcounter;
-	}
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }

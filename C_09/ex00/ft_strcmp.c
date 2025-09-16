@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex02.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/15 08:02:50 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/15 22:17:31 by nluis-mo         ###   ########.fr       */
+/*   Created: 2025/09/15 22:06:15 by nluis-mo          #+#    #+#             */
+/*   Updated: 2025/09/15 22:14:07 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char **ft_split(char *str, char *charset);
-
-int main(void)
+int	ft_strcmp(char *s1, char *s2)
 {
-	char** splitstrings = ft_split(",,hello,,world", ",");//"This-Is/A Test|Split|string", "-/|");
-
-	int splitstrcounter = 0;
-	while(*(splitstrings + splitstrcounter) != NULL)
+	while (*s1 && *s1 == *s2)
 	{
-		char* stringtoprint = *(splitstrings + splitstrcounter);
-		printf("%s\n", stringtoprint);
-		++splitstrcounter;
+		s1++;
+		s2++;
 	}
+	return (*s1 - *s2);
 }

@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ex02.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/15 08:02:50 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/15 22:17:31 by nluis-mo         ###   ########.fr       */
+/*   Created: 2025/09/15 22:05:48 by nluis-mo          #+#    #+#             */
+/*   Updated: 2025/09/15 22:14:02 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-char **ft_split(char *str, char *charset);
-
-int main(void)
+void	ft_putstr(char *str)
 {
-	char** splitstrings = ft_split(",,hello,,world", ",");//"This-Is/A Test|Split|string", "-/|");
-
-	int splitstrcounter = 0;
-	while(*(splitstrings + splitstrcounter) != NULL)
-	{
-		char* stringtoprint = *(splitstrings + splitstrcounter);
-		printf("%s\n", stringtoprint);
-		++splitstrcounter;
-	}
+	while (*str)
+		write(1, str++, 1);
 }
