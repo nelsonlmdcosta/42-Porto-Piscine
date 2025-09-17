@@ -20,7 +20,8 @@ foreach(dir ${EXERCISE_DIRS})
 
     if(SRC_FILES)
         # Add the executable
-        add_executable(${dir} ${SRC_FILES})
+        add_executable(${dir} ${SRC_FILES}
+                ex03/test_ex03.c)
 
         # Only run Norminette if executable is built and norminette exists
         if(NORMINETTE_EXECUTABLE)

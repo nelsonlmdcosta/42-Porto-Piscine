@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 12:03:51 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/09 17:26:40 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/16 16:30:25 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ void	ft_putnbr(int nb)
 
 int main(void)
 {
-	int tests[] = {-5, 0, 1, 2, 5, 10};
-	for (int i = 0; i < 6; i++) {
+	int tests[] = {-5, 0, 1, 2, 5, 10, 20};
+	for (int i = 0; i < 7; i++) {
 		ft_putstr("Test: ");
 		ft_putnbr(tests[i]);
 		ft_putstr("! = ");

@@ -6,12 +6,23 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/13 12:27:52 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/15 21:58:15 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/17 14:40:29 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "ft_stocks_str.h"
+
+#ifndef FT_STOCKS_STR_H
+# define FT_STOCKS_STR_H
+
+typedef struct s_stock_str
+{
+	int		size;
+	char	*str;
+	char	*copy;
+}	t_stock_str;
+
+#endif
 
 /*
  * Classic Strlen!

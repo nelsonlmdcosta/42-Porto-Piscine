@@ -1,5 +1,4 @@
-﻿#!/bin/sh
-# Like the previou excercies we're supposed to have run in bin/sh, using the "Shebang" as they callit will let us
+﻿# Like the previou excercies we're supposed to have run in bin/sh, using the "Shebang" as they callit will let us
 # Apparently lets us runa different shell loader and interpreter for ho the bash script should be exectued. The idea is
 # https://stackoverflow.com/questions/8967902/why-do-you-need-to-put-bin-bash-at-the-beginning-of-a-script-file#:~:text=Adding%20%23!%2Fbin%2Fbash%20as,or%20%22sha%2Dbang%22.
 
