@@ -1,8 +1,0 @@
-// Parsing Rules
-First Line MUST contain a valid positive number followed by the 3 characters used in representing the map
-Example
-9.ox
-9 = 9 Rows;
-. = Empty Slot;
-o = Obstacle;
-x = Solution;
