@@ -9,6 +9,8 @@ It includes the exercises (`C00`–`C08`) and Rush projects (`Rush00`, `Rush01`)
 
 ⚠️ **Note**: The repository is intended for exploration, learning, and reference. Please respect the 42 honor code — try solving the problems yourself first before peeking.  
 ⚠️ **Note**: This is still WIP so expect a lot of changes to structure and code that hasn't been submitted
+⚠️ **Note**: This github uses submodules, the documents are licenced, so I cannot upload them. This is more for me :p - git submodule update --init --recursive 
+
 
 ---
 
