@@ -8,6 +8,7 @@ This repository contains my work for the **42 Piscine**.
 It includes the exercises (`C00`–`C08`) and Rush projects (`Rush00`, `Rush01`), along with the official PDFs for reference.  
 
 ⚠️ **Note**: The repository is intended for exploration, learning, and reference. Please respect the 42 honor code — try solving the problems yourself first before peeking.  
+⚠️ **Note**: This is still WIP so expect a lot of changes to structure and code that hasn't been submitted
 
 ---
 
