@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 23:03:27 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/09 15:36:13 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/20 09:17:57 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,3 @@ void	ft_print_numbers(void)
 		++counter;
 	}
 }
-
-/*
-int main()
-{
-	ft_print_numbers();
-
-	return 0;
-}*/

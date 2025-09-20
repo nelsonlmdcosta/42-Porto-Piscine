@@ -6,7 +6,7 @@
 /*   By: nluis-mo <nluis-mo@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 23:03:47 by nluis-mo          #+#    #+#             */
-/*   Updated: 2025/09/09 15:39:44 by nluis-mo         ###   ########.fr       */
+/*   Updated: 2025/09/20 09:18:45 by nluis-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,35 +86,3 @@ void	ft_print_combn(int n)
 		return ;
 	gen_comb(current_combination, n, 0, 0);
 }
-
-/*
-int main()
-{
-	ft_print_combn(1);
-	write(1, "\n", 1);
-	write(1, "\n", 1);
-	ft_print_combn(2);
-	write(1, "\n", 1);
-	write(1, "\n", 1);
-	ft_print_combn(3);
-	write(1, "\n", 1);
-	write(1, "\n", 1);
-	ft_print_combn(4);
-	write(1, "\n", 1);
-	write(1, "\n", 1);
-	ft_print_combn(5);
-	write(1, "\n", 1);
-	write(1, "\n", 1);
-	ft_print_combn(6);
-	write(1, "\n", 1);
-	write(1, "\n", 1);
-	ft_print_combn(7);
-	write(1, "\n", 1);
-	write(1, "\n", 1);
-	ft_print_combn(8);
-	write(1, "\n", 1);
-	write(1, "\n", 1);
-	ft_print_combn(9);
-
-	return 0;
-}*/

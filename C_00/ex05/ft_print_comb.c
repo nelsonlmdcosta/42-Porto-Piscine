@@ -57,11 +57,3 @@ void	ft_print_comb(void)
 		++firstdigit;
 	}
 }
-
-/*
-int main()
-{
-	ft_print_comb();
-
-	return 0;
-}*/

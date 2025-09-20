@@ -42,26 +42,3 @@ void	ft_putnbr(int nb)
 	output = (nb % 10) + '0';
 	write(1, &output, 1);
 }
-
-/*
-int main()
-{
-	ft_putnbr(42);
-	write(1, "\n", 1);
-
-	ft_putnbr(-2147483648);
-	write(1, "\n", 1);
-
-	ft_putnbr(2147483647);
-	write(1, "\n", 1);
-
-	ft_putnbr(0);
-	write(1, "\n", 1);
-
-	ft_putnbr(-124);
-	write(1, "\n", 1);
-
-	ft_putnbr(1024);
-
-	return 0;
-}*/

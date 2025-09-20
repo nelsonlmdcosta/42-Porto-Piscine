@@ -1,2 +1,0 @@
-﻿
-norminette -R CheckForbiddenSourceHeader;
